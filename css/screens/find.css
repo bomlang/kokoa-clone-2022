@@ -90,6 +90,8 @@
     border-radius: 10px;
 }
 
+
+
 .open-post__heart-count {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -105,4 +107,24 @@
 
 .open-post__heart-count span {
     margin-left: 3px;
+  }
+
+  @keyframes hearthBeat{
+    0%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100%{
+        color: white;
+        transform: none;
+    }
+  }
+
+  .open-post__heart-count:hover i {
+    will-change: transform;
+    animation: hearthBeat 1s linear infinite;
   }
