@@ -22,10 +22,10 @@
 @import "components/no-mobile.css";
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #2e363e;
-  }
+}
 
-.main-screen{
+.main-screen {
   padding: 0px var(--horizontal-space);
 }
